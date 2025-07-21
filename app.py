@@ -688,7 +688,7 @@ st.markdown("""
 
 st.markdown("""
 <div style="text-align: center; padding: 2rem; color: #718096;">
-    <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Made with ❤️ using Advanced AI Technology</p>
-    <p style="margin: 0;">Trusted by 10,000+ developers worldwide • Enterprise-grade code refactoring</p>
+    <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 0.5rem;">Made with ❤️ by Priyanshu Garg</p>
+    <p style="margin: 0;">Just a student who loves making projects</p>
 </div>
 """, unsafe_allow_html=True)
