@@ -1,58 +1,74 @@
-# 🔧 AI Code Refactoring & Vulnerability Detection Assistant
+# 🧠 AI Code Refactor with Streamlit
 
-This project analyzes GitHub repositories to automatically **suggest code improvements** and detect **potential vulnerabilities** using Large Language Models (LLMs).
+This project is a **Streamlit-based web app** that allows users to upload Python files or enter a GitHub repository URL. It automatically analyzes the code and performs **code refactoring** using **Groq LLM (LLaMA-3 / GPT-4o)** behind the scenes.
 
 ---
 
 ## 🚀 Features
-- GitHub repo scraping
-- Code parsing and analysis
-- AI-powered refactoring suggestions
-- Vulnerability detection
-- Option to apply changes locally
+
+- 🔗 Accepts both GitHub repo URL and local `.py` / `.ipynb` file uploads
+- 🧠 Uses Groq's high-speed LLMs to analyze and refactor code
+- 📁 Converts `.ipynb` files to `.py` scripts
+- 📊 Displays refactored output with download option
+- 💻 Easy to use via interactive Streamlit frontend
 
 ---
 
-## 📦 Installation
+## 📦 Technologies Used
 
-```bash
-git clone https://github.com/priyanshugar-gg/ai-code-refactor.git
-cd ai-code-refactor
-pip install -r requirements.txt
-
-🛠️ Usage
-1. Create a .env file and add your OpenAI key:
-
-OPENAI_API_KEY=your_api_key_here
-
-2. Run the tool:
-
-python main.py
-
-3. Follow the CLI instructions to:
-
-Enter a GitHub repo URL
-
-See suggested improvements
-
-Approve/refuse applying changes
-
-🔒 Warning
-Keep your .env file private and never push it to GitHub. We've added it to .gitignore for safety.
-
-👨‍💻 Contributors
-Priyanshu Garg (@priyanshugar-gg)
-
-📄 License
-This project is licensed under the MIT License.
+- [Streamlit](https://streamlit.io/)
+- [Python](https://www.python.org/)
+- [Groq API](https://groq.com/)
+- [LangChain](https://www.langchain.com/)
+- [GitPython](https://gitpython.readthedocs.io/)
+- `nbconvert` for converting notebooks to Python scripts
 
 ---
 
-### ✅ Finally, commit and push the README:
+## ⚙️ How to Run Locally
 
-```bash
-git add README.md
-git commit -m "Added README with installation and usage instructions"
-git push origin main
+1. **Clone the repo**
 
-📸 **SAMPLE OUTPUT**: A screenshot of the program's output is available in the `assets` folder as `output.png`.
+   git clone https://github.com/priyanshugar-gg/AI-Code-Refactor-with-Streamlit.git
+   cd AI-Code-Refactor-with-Streamlit
+   
+2. **Create and activate a virtual environment (optional but recommended)**
+
+   python -m venv venv
+   source venv/bin/activate    # On Windows: venv\Scripts\activate
+   
+3. **Get your Groq API Key**
+   
+   Create a .env file in the root directory:
+   GROQ_API_KEY=your_groq_api_key_here
+   
+   Or export it as an environment variable:
+   export GROQ_API_KEY=your_groq_api_key_here
+
+4. **Run the Streamlit app**
+  
+   streamlit run app.py
+
+## 🎥 Demo
+📽️ Watch the screen recording of how to use the app and see results.
+
+## 📌 Notes
+This project uses the Groq Cloud API with models like LLaMA-3 and GPT-4o, which are very fast and cost-efficient.
+
+Make sure you don’t upload .env or secrets to GitHub (GitHub will block it).
+
+If you're facing any rate-limit issues, reduce token usage or add delay between multiple requests.
+
+## 📄 License
+MIT License © Priyanshu Garg
+Feel free to fork, improve, and use this project in your own apps!
+
+---
+
+### 🔧 Next Step
+
+1. Save this file as `README.md` in your project root.
+2. If you want help embedding the screen recording as a **GIF** or **video** in GitHub, upload it and I’ll help you embed it properly.
+3. Need a **requirements.txt** generator? Just ask!
+
+Let me know once you upload the demo video — I’ll help format the link properly in the README.
