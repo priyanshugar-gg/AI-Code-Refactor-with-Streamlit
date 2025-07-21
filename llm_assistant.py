@@ -1,8 +1,11 @@
 import os
+from dotenv import load_dotenv
 from groq import Groq
 
+load_dotenv()
+
 # Initialize Groq client
-client = Groq(api_key=os.getenv("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"))  # Make sure to set this in your terminal
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def get_suggestions(complexity_issues, security_issues):
     messages = [
