@@ -1,0 +1,8 @@
+streamlit
+radon
+GitPython
+python-dotenv
+groq
+nbconvert
+nbformat
+requests

@@ -2,7 +2,6 @@ import os
 import time
 import nbconvert
 import nbformat
-import openai
 import requests
 from pathlib import Path
 from dotenv import load_dotenv
