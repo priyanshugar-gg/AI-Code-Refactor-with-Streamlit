@@ -1,3 +1,7 @@
+Deployment Link: https://priyanshugar-gg-ai-code-refactor-with-streamlit-app-9dxurr.streamlit.app/
+## 🎥 If by any chance Deployment link has any issue then please watch the Demo Video.
+📽️ Demo Link: https://drive.google.com/file/d/16HIB6Ldeo4X5P7P9TOWBoAAFiukxghOx/view?usp=sharing
+
 # 🧠 AI Code Refactor with Streamlit
 
 This project is a **Streamlit-based web app** that allows users to upload Python files or enter a GitHub repository URL. It automatically analyzes the code and performs **code refactoring** using **Groq LLM (LLaMA-3 / GPT-4o)** behind the scenes.
@@ -48,9 +52,6 @@ This project is a **Streamlit-based web app** that allows users to upload Python
 4. **Run the Streamlit app**
   
    streamlit run app.py
-
-## 🎥 Demo
-📽️ Watch the screen recording of how to use the app and see results.
 
 ## 📌 Notes
 This project uses the Groq Cloud API with models like LLaMA-3 and GPT-4o, which are very fast and cost-efficient.
